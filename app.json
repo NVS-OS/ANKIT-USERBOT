@@ -1,0 +1,212 @@
+{
+  "name": "NAVODAYAN USERBOT",
+  "description": "Tнє Smoothest And Fastest Bot Made By ©ANKIT™. Made with Love And By Python Language With Hardwork... ❤ ",
+  "logo": "https://telegra.ph/file/5c61dd2bfd9c2b5477802.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "navodayan",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/NVS-OS/NVS-USERBOT",
+  "website": "https://github.com/NVS-OS",
+  "success_url": "https://github.com/NVS-OS",
+  "env": {
+    "ENV": {
+      "description": "Set this to ANYTHING will enable heroku.(Don't Need To Change It)",
+      "value": "ANYTHING"
+    },
+    "ALIVE_NAME": {
+      "description": "Fill your Full name. By default it is ANKIT",
+      "value": "『⚡- ANKIT -⚡ 』",
+      "required": false
+    },
+    "ALIVE_MSG": {
+      "description": "Set Custom Alive Message When entering .alive Or .nvs  Command.",
+      "value": "🔰LEGEND'S SAY'S TO ANKIT🔰",
+      "required": false
+    },
+    "ABUSE": {
+      "description": " Set ON or OFF. It Will Activate Abuse Plugin According To Ur Value Fill",
+      "value": "ON",
+      "required" :true
+    },
+    "EXTRA_PLUGIN": {
+      "description": "Set ON or OFF. It Will Activate Extra Plugin AccordingTo Ur Value Fill ",
+      "value": "ON",
+      "required" :true
+    },
+    "SPAM": {
+      "description": "Set ON or OFF. It Will Activate Spam Assistant According To Ur Value Fill",
+      "value": "ON",
+      "required" :true
+    },
+    "ASSISTANT": {
+      "description": "Set ON or OFF. It Will Activate Ur Assistant From Bot Father Start And See",
+      "value": "ON",
+      "required" :true
+    },
+    "YOUR_GROUP": {
+      "description": "Set Your Group Username. By Default It Is (@NoUB_CHAT)",
+      "value": "@NoUB_CHAT",
+      "required": false
+    },
+    "YOUR_CHANNEL": {
+      "description": "Set Your Channel Username",
+      "value": "@NoUB_SUPPORT",
+      "required": false
+    },
+    "BOY_OR_GIRL": {
+      "description": "Set Boy Or Girl. It Will Set Boy Like Boy Bot Else Set Like Girl Bot And Its Design",
+      "value": "Boy",
+      "required": false
+    },
+    "AWAKE_PIC": {
+      "description": "Put here any telegraph media link for awake pic in .awake Or .bot command.",
+      "value": "",
+      "required": false
+    },
+    "HELP_PIC": {
+      "description": "Put here any telegraph media link for OP pic in .op command.",
+      "value": "",
+      "required": false
+    },
+    "PING_PIC": {
+      "description": "Put here any telegraph media link for PING pic in .ping command.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_PIC": {
+      "description": "Put here any telegraph media link for alive pic in .alive.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_EMOJI": {
+      "description": "Put here any emoji. Which Will be Show When U Do .alive.",
+      "value": "🔰",
+      "required": false
+    },
+    "BIO_MSG": {
+      "description": "Put Your Telegram Bio Here Required For Auto Bio.",
+      "value": "I Am Pro Person Because I am Navodayan 🇮🇳.",
+      "required": true
+    },
+    "PM_PIC": {
+      "description": "put here any telegraph media link for custom pmpermit pic.",
+      "value": "",
+      "required": false
+    },
+    "PM_MSG": {
+      "description": "Enter Your custom pm permit msg.",
+      "value": "Hello I Am Assistant.\nPM Security Of My Owner To Protect From Spammers. Dont Spam Here Else Get Ban By Me\n Wait For My Owner To Allow U To Message\nThankYou!",
+      "required": false
+    },
+    "MAX_FLOOD_IN_PM": {
+      "description": "Set Spam Number After That He Get Blocked By Deafault It Is (3)",
+      "value": "3",
+      "required": true
+    },
+    "LOGGER_ID": {
+      "description": "Create a Private Group With Add @MissRose_bot Do /id. Value Should Be Start With -",
+      "value": "",
+      "required": true
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
+      "value": "14627413"
+    },
+    "SUDO_USERS": {
+      "description": "Its Sudo Access To Give Bot Access To Ur Friend.",
+      "value": "5035281405 2127221861",
+      "required": false
+    },
+    "SUDO_COMMAND_HAND_LER": {
+      "description": "Please enter sudo user command handler",
+      "value": "*",
+      "required": false
+    },
+    "HANDLER": {
+      "description": "U can Change Ur command Handler By Default it is (.)",
+      "value": ".",
+      "required": false 
+      },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": "4d5ff4db45a7e931930d0c923a7fb295"
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "Paste Group Id Which U Get From @missrose_bot",
+      "value": ""
+    }, 
+    "NVS_STRING": {
+      "description": "Get this value by running https://replit.com/@PROBOY-OP/PRO-LEGENDBOT#main.py ",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+      "value": "",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "The Value of App Name you filled in right on top.Required for updater to work.",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn on inline Mode on bot settings. Get it.",
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Needed for inline buttons maker. Make a bot at @BotFather and copy the username of your bot.",
+      "value": ""
+    },
+    "NO_OF_BUTTONS": {
+      "description": " Set The Amount Of Buttons Displayed In legend Command default 10",
+      "value": "10",
+      "required": true
+    },
+    "NO_OF_COLUMNS": {
+      "description": "Set The Amount Of Rows You Want To Displayed In legend Command default 2",
+      "value": "2",
+      "required": true
+    },
+    "HELP_EMOJI1": {
+      "description": "Set The emojies You Want to Add In Help Command!!",
+      "value": "🖤",
+      "required": false
+    },
+    "HELP_EMOJI2": {
+      "description": "Set The emojies You Want to Add In Help Command!!",
+      "value": "💙",
+      "required": false
+    },
+    "PM_DATA": {
+      "description": "Type OFF if you want to disable pm protection... ",
+      "value": "ON",
+      "required": true
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
