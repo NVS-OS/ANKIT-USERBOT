@@ -1,0 +1,44 @@
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $ANKIT_REPO == "ANKITBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL05WUy1PUy9BTktJVC9hcmNoaXZlL0FOS0lULnppcA==" | base64 -d
+    elif [[ $ANKIT_REPO == "ANKITBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL05WUy1PUy9BTktJVC9hcmNoaXZlL0FOS0lULnppcA==" | base64 -d
+    elif [[ $ANKIT_REPO =~ $regex ]]
+    then
+        if [[ $ANKIT_REPO_BRANCH ]]
+        then
+            echo "${ANKIT_REPO}/archive/${ANKIT_REPO_BRANCH}.zip"
+        else
+            echo "${ANKIT_REPO}/archive/ANKIT.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL05WUy1PUy9BTktJVC9hcmNoaXZlL0FOS0lULnppcA==" | base64 -d
+    fi
+}
+
+
+_ankit_bot () {
+    local zippath
+    zippath="ANKIT.zip"
+    echo "  🔰 Downloading NAVODAYAN USERBOT Source Code... 🔰"
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "  📍Unpacking Data...📍"
+    ANKITPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo " 🏅 Download Complete Now Installing 🏅"
+    echo "  ✨ INSTALLING NAVODAYAN USERBOT ✨"
+    rm -rf "$zippath"
+    sleep 5
+    cd $ANKITPATH
+    echo "    ⚜️Starting NAVODAYAN USERBOT⚜️     "
+    echo " ♥️ NOW WAIT 3 MIN INSTALLING ALL PLUGIN ♥️"
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_ankit_bot
