@@ -140,7 +140,7 @@
       "description": "Paste Group Id Which U Get From @missrose_bot",
       "value": ""
     }, 
-    "NVS_STRING": {
+    "PRO_STRING": {
       "description": "Get this value from https://github.com/NVS-OS ",
       "value": ""
     },
