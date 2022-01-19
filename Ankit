@@ -24,17 +24,17 @@ _get_repolink () {
 _ankit_bot () {
     local zippath
     zippath="ANKIT.zip"
-    echo "  🔰 Downloading NAVODAYAN USERBOT Source Code... 🔰"
+    echo "  🔰 Downloading ANKIT USERBOT Source Code... 🔰"
     wget -q $(_get_repolink) -O "$zippath"
     echo "  📍Unpacking Data...📍"
     ANKITPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo " 🏅 Download Complete Now Installing 🏅"
-    echo "  ✨ INSTALLING NAVODAYAN USERBOT ✨"
+    echo "  ✨ INSTALLING ANKIT USERBOT ✨"
     rm -rf "$zippath"
     sleep 5
     cd $ANKITPATH
-    echo "    ⚜️Starting NAVODAYAN USERBOT⚜️     "
+    echo "    ⚜️Starting ANKIT USERBOT⚜️     "
     echo " ♥️ NOW WAIT 3 MIN INSTALLING ALL PLUGIN ♥️"
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
